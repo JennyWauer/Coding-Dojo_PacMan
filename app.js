@@ -29,3 +29,5 @@ function displayWorld(){
     }
     document.getElementById('world').innerHTML = output;
 }
+
+displayWorld();
