@@ -13,9 +13,18 @@ function displayWorld(){
     var output = '';
 
     for(var i=0; i<world.length; i++){
+        output += "\n\<div class='row'>";
         for(var j=0; j<world.length; j++){
-            output = output + world[i][j];
+            if(world[i][j] === 2){
+                output += "\n\t<div class='brick'></div>";
+            }
+            else if(world[i][j] === 1){
+                output += "\n\t<div class='coin'></div>";
+            }
+            if(world[i][j] === 0){
+                output += "\n\t<div class='empty'></div>";
+            }
         }
+        output += "\n\</div>";
     }
-    console.log(output)
 }
