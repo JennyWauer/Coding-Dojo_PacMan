@@ -1,12 +1,12 @@
 var world =[
     [2,2,2,2,2,2,2,2,2,2],
+    [2,1,1,0,1,1,1,1,1,2],
+    [2,1,1,1,1,1,1,2,1,2],
     [2,1,1,1,1,1,1,1,1,2],
+    [2,2,1,1,1,1,0,1,1,2],
     [2,1,1,1,1,1,1,1,1,2],
-    [2,1,1,1,1,1,1,1,1,2],
-    [2,1,1,1,1,1,1,1,1,2],
-    [2,1,1,1,1,1,1,1,1,2],
-    [2,1,1,1,1,1,1,1,1,2],
-    [2,2,2,2,2,2,2,2,2,2],
+    [2,1,1,1,1,0,1,1,1,2],
+    [2,2,2,2,2,2,2,2,2,2]
 ];
 
 function displayWorld(){
@@ -14,7 +14,7 @@ function displayWorld(){
 
     for(var i=0; i<world.length; i++){
         output += "\n\<div class='row'>";
-        for(var j=0; j<world.length; j++){
+        for(var j=0; j<world[i].length; j++){
             if(world[i][j] === 2){
                 output += "\n\t<div class='brick'></div>";
             }
@@ -27,4 +27,5 @@ function displayWorld(){
         }
         output += "\n\</div>";
     }
+    document.getElementById('world').innerHTML = output;
 }
