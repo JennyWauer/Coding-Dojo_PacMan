@@ -18,3 +18,10 @@ body {
     background-position: center;
     background-size: contain;
 }
+
+.pacman{
+    background: url("images/pacman.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
