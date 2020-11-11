@@ -10,5 +10,9 @@
 }
 
 .coin{
-    
+    background: url("images/pacman_coin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
 }
